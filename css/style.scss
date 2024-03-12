@@ -1,6 +1,6 @@
 $black: #000000;
 $white: #ffffff;
-$primary1:#fec016;
+$primary1: #fec016;
 
 @mixin main-font {
   font-family: "Poppins", sans-serif;
@@ -125,35 +125,44 @@ body {
   margin: 0 auto;
 }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  margin: 10px 30px;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
+.custom_nav-container .navbar-collapse .navbar-row .nav-link {
+  color: white; 
+  text-decoration: none;
+  margin-right: 20px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s; /* Add transition for border-color */
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -2px;
-    transform: translate(-50%, -50%);
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    background-color: $white;
+  &:hover,
+  &.clicked {
+    color: red;
+    border-color: red;
+  }
+
+  &::after {
+    content: "";  /* Add content for the pseudo-element */
+    display: block;  /* Make it a block element to have its own line */
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+
+  &:hover::after,
+  &.clicked::after {
+    border-color: red;
   }
 }
 
-a,
-a:hover,
-a:focus {
+.custom_nav-container .navbar-collapse a,
+.custom_nav-container .navbar-collapse a:hover,
+.custom_nav-container .navbar-collapse a:focus {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: initial;
+.custom_nav-container .navbar-collapse a:hover,
+.custom_nav-container .navbar-collapse a:focus {
+  color: white; /* Set the text color to white on hover or focus */
 }
+
 
 .btn,
 .btn:focus {
@@ -161,35 +170,12 @@ a:focus {
   box-shadow: none;
 }
 
-
-.user_option {
-  display: flex;
-  align-items: center;
-
-}
-
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
 .navbar-brand {
   display: flex;
   align-items: center;
   @include secondary-font();
-
-  span {
-    font-size: 24px;
-    color: $white;
-  }
-
 }
+
 
 .custom_nav-container {
   z-index: 99999;
@@ -204,6 +190,28 @@ a:focus {
   background-image: url(../images/menu.png);
   background-size: 55px;
 }
+
+.custom_nav-container .navbar-collapse {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  /* Adjust the width as needed */
+  height: 100%;
+  background-color: #ffffff;
+  /* Adjust background color as needed */
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+  /* Add this to enable vertical scrolling if needed */
+}
+
+.custom_nav-container .navbar-collapse.show {
+  top: 0;
+
+}
+
+
 
 /*end header section*/
 
@@ -708,3 +716,4 @@ a:focus {
 }
 
 /* end footer section*/
+
