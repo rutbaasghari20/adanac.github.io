@@ -692,6 +692,39 @@ body {
 
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+
+.carousel {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px; /* Adjust the gap between items */
+  text-align: center; /* Center the content horizontally */
+}
+
+.item img {
+  max-height: 100px; /* Adjust maximum height as needed */
+  max-width: 100%;
+  display: block; /* Ensure the image is centered properly */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
 // end info section
 
 
