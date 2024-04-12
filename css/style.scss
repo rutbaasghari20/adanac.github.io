@@ -3,12 +3,11 @@ $white: #ffffff;
 $primary1: #fec016;
 
 @mixin main-font {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @mixin secondary-font {
-  font-family: 'Open Sans', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2) {
@@ -96,7 +95,7 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/img4.jpg);
   background-size: cover;
 }
 
@@ -359,6 +358,19 @@ body {
 
   .detail-box {
     margin-left: 65px;
+
+    p {
+      margin-top: 35px;
+    }
+
+    a {
+      @include hero_btn(#353434, $white, 8px, 30px);
+      border-radius: 20px 20px 0 20px;
+      margin-top: 35px;
+    }
+  }
+
+  .detail-box1 {
 
     p {
       margin-top: 35px;
