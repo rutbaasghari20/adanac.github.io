@@ -29,7 +29,8 @@ $primary1: #fec016;
 }
 
 body {
-  @include main-font;
+  // @include main-font;
+  font-family: 'Open Sans', 'Segoe UI', 'Roboto', sans-serif;
   color: #000000;
   background-color: #ffffff;
 }
@@ -95,7 +96,7 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/heroo.jpg);
+  background-image: url(../images/img1.jpg);
   background-size: cover;
 }
 
