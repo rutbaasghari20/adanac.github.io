@@ -91,6 +91,11 @@ body {
   align-content: center;
 }
 
+.who-we-are-image {
+  height: 55vh;
+  border-radius: 30px;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
