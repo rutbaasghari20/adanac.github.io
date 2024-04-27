@@ -184,9 +184,69 @@
     .do_section .do_container .arrow_bg::before {
         display: none;
     }
+
+    .main-logo {
+        width: 17vw;
+        height: 7vh;
+
+    }
+
+    .slider-height {
+        height: 30vh;
+        flex-direction: column;
+        align-content: center;
+        padding: 0 10px;
+    }
+
+    .who-we-are-image {
+        height: 30vh;
+        border-radius: 30px;
+    }
+
+    .who_section .heading_container {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .readmore-button {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .main-logo {
+        width: 17vw;
+        height: 7vh;
+
+    }
+
+    .slider-height {
+        height: 30vh;
+        flex-direction: column;
+        align-content: center;
+        padding: 0 10px;
+    }
+
+    .who-we-are-image {
+        height: 30vh;
+        border-radius: 30px;
+    }
+
+    .who_section .heading_container {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .readmore-button {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 420px) {
     .slider_section .detail-box h2 {
