@@ -221,9 +221,9 @@ a:focus {
   text-transform: uppercase;
 }
 
-.slider_section .detail-box p {
+/* .slider_section .detail-box p {
   margin-top: 25px;
-}
+} */
 
 .slider_section .detail-box a {
   display: inline-block;
@@ -247,7 +247,6 @@ a:focus {
 .slider_section #carouselExampleIndicators li {
   width: 15px;
   height: 15px;
-  background-color: transparent;
   border: 3px solid #ffffff;
   border-radius: 100%;
   opacity: 1;

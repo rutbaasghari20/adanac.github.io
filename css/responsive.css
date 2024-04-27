@@ -21,6 +21,17 @@
         margin-right: 15%;
         margin-left: 15%;
         list-style: none;
+    }
+
+    .main-logo {
+        width: 17vw;
+        height: 7vh;
+    }
+
+    .slider-height {
+        height: 20vh;
+        flex-direction: column;
+        align-content: center;
       }
 
 }
@@ -42,6 +53,7 @@
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
         padding: 0 5px;
     }
+
     .carousel-indicators {
         position: absolute;
         right: 0;
@@ -56,6 +68,19 @@
         margin-right: 15%;
         margin-left: 15%;
         list-style: none;
+    }
+
+    .main-logo {
+        width: 17vw;
+        height: 7vh;
+        
+    }
+
+    .slider-height {
+        height: 30vh;
+        flex-direction: column;
+        align-content: center;
+        padding: 0 10px;
       }
 }
 
