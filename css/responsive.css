@@ -106,7 +106,7 @@
 } */
 
 /* MOBILE view */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .info_section .col-md-3 {
         text-align: center;
@@ -153,11 +153,18 @@
     }
 
     .slider-height {
-        height: 30vh;
+        margin-top: 12px;
+        height: 20vh;
+        width: 100%;
         flex-direction: column;
         align-content: center;
-        padding: 0 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
+
 
     .who-we-are-image {
         height: 30vh;
@@ -179,6 +186,22 @@
     .readmore-button {
         display: flex;
         justify-content: center;
+    }
+
+    .slider_section .detail-box h2 {
+        font-size: 13pt;
+    }
+
+    .slider_section .detail-box h1 {
+        font-size: 28pt;
+    }
+
+    .slider_section .detail-box h5 {
+        font-size: 10pt;
+    }
+
+    .slider_section .detail-box p {
+        font-size: 10pt;
     }
 }
 
@@ -260,7 +283,7 @@
     }
 } */
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
     .slider_section .detail-box h2 {
         font-size: 1.5rem;
     }
@@ -268,7 +291,7 @@
     .slider_section .detail-box h1 {
         font-size: 3rem;
     }
-}
+} */
 
 @media (max-width: 360px) {}
 
