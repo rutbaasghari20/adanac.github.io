@@ -1,3 +1,5 @@
+/* IPAD view */
+
 @media (max-width: 1120px) {
     .hero_area {
         height: auto;
@@ -35,12 +37,15 @@
     }
 
     .who-we-are-image {
-        height: 20vh;
+        height: 23vh;
+        width: 38vw;
         border-radius: 30px;
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .user_option {
         flex-direction: column;
     }
@@ -88,23 +93,19 @@
     }
 
     .who-we-are-image {
-        height: 30vh;
+        height: 70vh;
         border-radius: 30px;
-    }
-
-    .who_section .heading_container {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .readmore-button {
         display: flex;
         justify-content: center;
     }
-}
+} */
 
+/* MOBILE view */
 @media (max-width: 768px) {
 
     .info_section .col-md-3 {
@@ -160,7 +161,12 @@
 
     .who-we-are-image {
         height: 30vh;
+        width: 75vw;
         border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .who_section .heading_container {
@@ -176,7 +182,7 @@
     }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .slider_section .detail-box h1 {
         font-size: 3.5rem;
     }
@@ -199,8 +205,11 @@
     }
 
     .who-we-are-image {
-        height: 30vh;
+        height: 45vh;
+        width: 75vw;
         border-radius: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .who_section .heading_container {
@@ -231,8 +240,11 @@
     }
 
     .who-we-are-image {
-        height: 30vh;
+        height: 45vh;
+        width: 75vw;
         border-radius: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .who_section .heading_container {
@@ -246,7 +258,7 @@
         display: flex;
         justify-content: center;
     }
-}
+} */
 
 @media (max-width: 420px) {
     .slider_section .detail-box h2 {
@@ -260,8 +272,17 @@
 
 @media (max-width: 360px) {}
 
+/* LAPTOP view */
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
+    }
+
+    .who-we-are-image {
+        height: 55vh;
+        width: 35vw;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
     }
 }

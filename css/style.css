@@ -346,8 +346,11 @@ a:focus {
   align-items: center;
 }
 
-.who_section .img-box img {
-  width: 100%;
+.who_section .img-box {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .who_section .detail-box {
