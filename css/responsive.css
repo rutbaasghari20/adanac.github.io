@@ -43,6 +43,16 @@
         display: flex;
         justify-content: center;
     }
+
+    .client_section .box {
+        padding: 10px;
+        height: 40vh;
+    }
+
+    .client_section .box .why-adanac-box-logo  img {
+        width: 8vw;
+        height: 5vh;
+      }
 }
 
 /* MOBILE view */
@@ -149,6 +159,16 @@
 
     .mobile-view-p-text {
         text-align: center;
+    }
+
+    .client_section .box {
+        padding: 10px;
+        height: 95vh;
+    }
+
+    .client_section .box .why-adanac-box-logo  img {
+        width: 17vw;
+        height: 7vh;
       }
 }
 
