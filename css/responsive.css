@@ -46,13 +46,13 @@
 
     .client_section .box {
         padding: 10px;
-        height: 40vh;
+        height: 50vh;
     }
 
-    .client_section .box .why-adanac-box-logo  img {
+    .client_section .box .why-adanac-box-logo img {
         width: 8vw;
         height: 5vh;
-      }
+    }
 }
 
 /* MOBILE view */
@@ -166,11 +166,13 @@
         height: 95vh;
     }
 
-    .client_section .box .why-adanac-box-logo  img {
+    .client_section .box .why-adanac-box-logo img {
         width: 17vw;
         height: 7vh;
-      }
+    }
 }
+
+@media (max-width: 767px) {}
 
 /* LAPTOP view */
 @media (min-width: 1200px) {
@@ -327,14 +329,10 @@
     }
 } */
 
-/* @media (max-width: 420px) {
-    .slider_section .detail-box h2 {
-        font-size: 1.5rem;
-    }
 
-    .slider_section .detail-box h1 {
-        font-size: 3rem;
+/* @media (max-width: 360px) {
+    .client_section .box {
+        padding: 10px;
+        height: 55vh;
     }
 } */
-
-@media (max-width: 360px) {}
