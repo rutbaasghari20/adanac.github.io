@@ -410,7 +410,7 @@ a:focus {
 }
 
 .client_section {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .client_section .heading_container {
@@ -421,29 +421,20 @@ a:focus {
 }
 
 .client_section .box {
-  padding: 20px;
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 55vh;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-align: center;
   margin: 20px;
   justify-content: center;
-  align-content: center;
+
 }
 
 .why-adanac-box-logo {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -451,23 +442,18 @@ a:focus {
   width: 60px;
 } */
 
-.client_section .box .why-adanac-box-logo  img {
+/* .client_section .box .why-adanac-box-logo  img {
   width: 6vw;
   height: 10vh;
-}
+} */
 
 .client_section .box .detail-box {
-  /* margin-top: 35px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
+  /* Allow the detail box to expand within the fixed height */
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  /* Spread content vertically */
 }
 
 .client_section .box .detail-box h5 {
@@ -485,7 +471,7 @@ a:focus {
 
 .client_section .box .detail-box img {
   width: 15px;
-  margin: 35px 0;
+  margin: 10px 0;
 }
 
 .client_section .carousel-wrap {

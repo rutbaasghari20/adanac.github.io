@@ -46,7 +46,8 @@
 
     .client_section .box {
         padding: 10px;
-        height: 50vh;
+        height: 30vh;
+        
     }
 
     .client_section .box .why-adanac-box-logo img {
@@ -163,16 +164,10 @@
 
     .client_section .box {
         padding: 10px;
-        height: 95vh;
+        height: 40vh;
     }
 
-    .client_section .box .why-adanac-box-logo img {
-        width: 17vw;
-        height: 7vh;
-    }
 }
-
-@media (max-width: 767px) {}
 
 /* LAPTOP view */
 @media (min-width: 1200px) {
