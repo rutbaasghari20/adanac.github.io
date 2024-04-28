@@ -340,6 +340,38 @@ a:focus {
   background-image: url(../images/arrow-end.png);
 }
 
+.core_section {
+  padding: 20px 0;
+}
+
+.core_section .heading_container {
+  display: flex;
+  align-items: center;
+}
+
+.core_section .core_section_grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.core_section .core_section_cards {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.core_section .core_section_cards h6 {
+  font-weight: bold;
+}
+
+.core_section .core_section_grids .core_section_cards:last-child:only-child {
+  justify-self: center;
+}
+
+
 .who_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
